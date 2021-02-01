@@ -10,7 +10,7 @@ process: main_process.o png_util.o
 	gcc -o process -lm -l png16 main_process.o png_util.o
 
 test: process 
-	./process cube.png test.png
+	./process ./images/cube.png test.png
 
 clean:
 	rm *.o
